@@ -1,0 +1,1 @@
+# shutter-eslint-config-base
