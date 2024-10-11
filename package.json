@@ -1,0 +1,41 @@
+{
+	"name": "@councilbox/shutter-eslint-config-base",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"test": "eslint ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Councilbox/eslint-config-base.git"
+	},
+	"author": "Councilbox (https://councilbox.com)",
+	"contributors": [
+		"Miguel Rodríguez Crespo <mirodriguez11@gmail.com>"
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Councilbox/shutter-eslint-config-base/issues"
+	},
+	"homepage": "https://github.com/Councilbox/shutter-eslint-config-base#readme",
+	"main": "eslint.config.mjs",
+	"keywords": [
+		"eslint",
+		"eslintconfig"
+	],
+	"description": "Shutter esLint config",
+	"devDependencies": {
+		"@eslint/js": "^9.12.0",
+		"@types/eslint__js": "^8.42.3",
+		"eslint": "^9.12.0",
+		"husky": "^5.1.1",
+		"typescript": "^5.5.4",
+		"typescript-eslint": "^8.8.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm test",
+			"pre-push": "npm test"
+		}
+	}
+}
