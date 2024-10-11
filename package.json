@@ -18,7 +18,7 @@
 		"url": "https://github.com/Councilbox/shutter-eslint-config-base/issues"
 	},
 	"homepage": "https://github.com/Councilbox/shutter-eslint-config-base#readme",
-	"main": "eslint.config.mjs",
+	"main": "rules.js",
 	"keywords": [
 		"eslint",
 		"eslintconfig"
