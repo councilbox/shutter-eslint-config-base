@@ -1,2 +1,2 @@
 # shutter-eslint-config-base
-Shutter esLint base config
+Shutter ESLint base config
