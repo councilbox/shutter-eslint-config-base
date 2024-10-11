@@ -8,7 +8,8 @@ export default tseslint.config(
 	eslint.configs.recommended,
 	...tseslint.configs.recommended,
 	{
-		// @ts-ignore
+		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+		// @ts-expect-error
 		rules
 	}
 );
