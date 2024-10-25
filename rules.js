@@ -1,4 +1,7 @@
-export default {
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+
+const shutterRules = {
 	'@typescript-eslint/no-explicit-any': 0,
 	'array-bracket-spacing': ['error', 'never'],
 	'arrow-parens': ['error', 'as-needed'],
@@ -132,3 +135,13 @@ export default {
 	'valid-typeof': 2,
 	'yoda': 2
 };
+
+const rules = [
+	eslint.configs.recommended,
+	...tseslint.configs.recommended,
+	{
+		rules: { ...shutterRules }
+	}
+];
+
+export default rules;
