@@ -3,6 +3,7 @@ import tseslint from 'typescript-eslint';
 
 const shutterRules = {
 	'@typescript-eslint/no-explicit-any': 0,
+	'@typescript-eslint/no-unused-vars': [2, { 'ignoreRestSiblings': true }],
 	'array-bracket-spacing': ['error', 'never'],
 	'arrow-parens': ['error', 'as-needed'],
 	'arrow-spacing': 2,
