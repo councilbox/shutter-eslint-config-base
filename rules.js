@@ -106,7 +106,12 @@ const shutterRules = {
 	'no-unexpected-multiline': 2,
 	'no-unmodified-loop-condition': 2,
 	'no-unreachable': 2,
-	'no-unused-vars': [2, { 'ignoreRestSiblings': true }],
+	'no-unused-vars': [2, { 
+		'argsIgnorePattern': '^_', // Ignora argumentos de funciones que empiezan con '_'
+		'varsIgnorePattern': '^_', // Ignora variables que empiezan con '_'
+		'caughtErrorsIgnorePattern': '^_', // Ignora variables de 'catch' que empiezan con '_'
+		'ignoreRestSiblings': true // Ignorar las variables no utilizadas cuando se extraen propiedades de un objeto
+	}],
 	'no-useless-call': 2,
 	'no-useless-computed-key': 2,
 	'no-useless-concat': 2,
