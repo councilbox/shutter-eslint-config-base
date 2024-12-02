@@ -3,7 +3,12 @@ import tseslint from 'typescript-eslint';
 
 const shutterRules = {
 	'@typescript-eslint/no-explicit-any': 0,
-	'@typescript-eslint/no-unused-vars': [2, { 'ignoreRestSiblings': true }],
+	'@typescript-eslint/no-unused-vars': [2, { 
+		'argsIgnorePattern': '^_', // Ignora argumentos de funciones que empiezan con '_'
+		'varsIgnorePattern': '^_', // Ignora variables que empiezan con '_'
+		'caughtErrorsIgnorePattern': '^_', // Ignora variables de 'catch' que empiezan con '_'
+		'ignoreRestSiblings': true // Ignorar las variables no utilizadas cuando se extraen propiedades de un objeto
+	}],
 	'array-bracket-spacing': ['error', 'never'],
 	'arrow-parens': ['error', 'as-needed'],
 	'arrow-spacing': 2,
